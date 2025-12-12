@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./CSS/sy2.css">
+    
+</head>
+<body background="./img/record3.jpg">
+    <div class="upper-container">
+        <div class="record-container">
+            <div class="record-bg">
+                <div class="record-img rotate-play"></div>
+            </div>
+        </div>
+        <div class="introduction-container">
+        <div class="music-title">音乐名称</div>
+        <div class="author-container">
+            作者：
+            <span class="author-name">关咏淋 25216950104</span>
+        </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <audio id="audioTag"></audio>
+        <div class="progress">
+            <div class="progress-played">
+
+            </div>
+        </div>
+        <div class="controls">
+            <div class="time-container">
+                <span class="played-time">00:00</span>
+                &nbsp;/&nbsp;
+                <span class="audio-time">00:00</span>
+            </div>
+            <div class="center-button">
+                <div class="playMode center-icon"></div>
+                <div class="beforeMusic center-icon"></div>
+                <div class="playPause center-icon icon-play"></div>
+                <div class="nextMusic center-icon"></div>
+                <div class="volumn center-icon"></div>
+                <input type="range" value="70" min="0" max="100" step="1" id="volumn-togger"/> 
+            </div>
+            <div class="right-button">
+                <div class="MV right-icon"></div>
+                <div class="speed">1.0X</div>
+                <div class="list right-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="close-list"></div>
+    <div class="musicList-container">    
+        <div class="music-list-title">播放列表</div>
+    <hr/>
+    <div class="musics-list">
+        
+    </div></div>
+
+</body>
+</html>
+
+<script src="./JS/shiyan2.js"></script>
